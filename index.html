@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Card</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Press+Start+2P&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 80%;
+        }
+
+        .name {
+            font-weight: 700;
+            color: #6b8e23;
+            margin-top: 10px;
+            font-family: 'Press Start 2P', cursive;
+        }
+
+        .details {
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .year {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .stars {
+            margin-top: 10px;
+        }
+
+        .stars i {
+            
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Panda Card</h1>
+        <img src="data:image/jpeg;base64,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" alt="Panda Image">
+        <div class="name">John Doe</div>
+        <div class="details">Computer Science 1</div>
+        <div class="details">Computer Science 2</div>
+        <div class="year">Year: 3</div>
+        <div class="stars">
+            <i class="material-icons">star_border</i>
+            <i class="material-icons">star_border</i>
+            <i class="material-icons">star_border</i>
+            <i class="material-icons">star_border</i>
+            <i class="material-icons">star_border</i>
+        </div>
+    </div>
+</body>
+</html>
